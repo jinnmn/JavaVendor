@@ -6,6 +6,9 @@ public class Product {
     private Double price;
     private LocalDate releaseDate;
      
+    public Product() {
+    }
+
     public Product(String name, Double price, LocalDate releaseDate) {
         this.name = name;
         this.price = price;
