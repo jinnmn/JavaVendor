@@ -25,4 +25,8 @@ public class Product {
         return releaseDate;
     }
 
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
 }
