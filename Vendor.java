@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Vendor {
 
-    private List<Product> goods; 
+    protected List<Product> goods; 
     
     public Vendor(List<Product> goods) {
         this.goods = goods;        

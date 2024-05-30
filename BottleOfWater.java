@@ -44,7 +44,7 @@ public class BottleOfWater extends Product {
          + ", releaseDate=" + this.getReleaseDate()
           + ", volume=" + volume +
            ", puck=" + puck +
-            ", isGased=" + isGased + "]";
+            ", isGased=" + isGased + "]"+"\n";
     }
 
     

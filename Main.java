@@ -4,16 +4,17 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Product bottle1 = new BottleOfWater("нарзан", 55.0, LocalDate.of(2024, 1, 22));
-        BottleOfWater bottle2 = new BottleOfWater("voda", 10.0, LocalDate.now(), 1.5f,  Package.GLASS.getName(), true);
-        BottleOfWater bottle3 = new BottleOfWater();
-        System.out.println(bottle1);
-        System.out.println(bottle2);
-        System.out.println(bottle3);
-        
-        Vendor vm = new WaterVendor();
-        vm.addGoods(List.of(bottle1, bottle1, bottle1, bottle2, bottle3));
+        HotDrink coffe = new HotDrink("coffe", 100.0, LocalDate.of(2024, 6, 30)
+        , Package.PAPER.getName(), 0.5f, 90);
+        HotDrink tea = new HotDrink("tea", 80.0, LocalDate.of(2024, 6, 30)
+        , Package.PAPER.getName(), 0.5f, 85);
+
+        HotWaterVendor vm = new HotWaterVendor();
+        vm.addGoods(List.of(tea, tea, tea, coffe, coffe));
         System.out.println(vm.getGoods());
+        // vm.getProduct("voda");
+        // System.out.println(vm.getGoods());
+
 
             
     }

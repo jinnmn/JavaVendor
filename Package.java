@@ -9,6 +9,6 @@ Package(String matt) {
 }
 
 public String getName() {
-        return matt;
+        return matt+ " ";
 }
 }
