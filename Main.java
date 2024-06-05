@@ -12,8 +12,8 @@ public class Main {
         HotWaterVendor vm = new HotWaterVendor();
         vm.addGoods(List.of(tea, tea, tea, coffe, coffe));
         System.out.println(vm.getGoods());
-        // vm.getProduct("voda");
-        // System.out.println(vm.getGoods());
+        HotWaterVendor.getProduct("tea" , 80.0f , 90);
+        System.out.println(vm.getGoods());
 
 
             

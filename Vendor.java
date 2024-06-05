@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Vendor {
+public abstract class Vendor {
 
-    protected List<Product> goods; 
+    protected static List<Product> goods; 
     
     public Vendor(List<Product> goods) {
-        this.goods = goods;        
+        Vendor.goods = goods;        
     }
 
     public Vendor() {
-        this.goods = new ArrayList<>();        
+        Vendor.goods = new ArrayList<>();        
     }
 
     public List<Product> getGoods() {
@@ -18,7 +18,7 @@ public class Vendor {
     }
 
     public void addGoods(List<Product> goods) {
-        this.goods.addAll(goods);        
+        Vendor.goods.addAll(goods);        
     }
 
     public Product getProduct(String name) {
@@ -29,7 +29,5 @@ public class Vendor {
                 return item;
             }
         } return null;
-
-
 }
 }
